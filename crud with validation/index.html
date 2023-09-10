@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+
+
+ <style>
+   span{
+    color: goldenrod;
+    font-weight: bold;
+   }
+ </style>
+
+</head>
+
+<body>
+
+    <div class="container my-5">
+
+            <label for="productName">productName:</label>
+            <input type="text" class="form-control mb-3" id="productName">
+            <p id="productNameFeedback" class="text-danger"></p>
+            <label for="productPrice">productPrice:</label>
+            <input type="text" class="form-control mb-3" id="productPrice">
+            <p id="productPriceFeedback" class="text-danger"></p>
+            <label for="productCat">productCat:</label>
+            <input type="text" class="form-control mb-3" id="productCat">
+
+            <label for="productDesc">productDesc:</label>
+            <input type="text" class="form-control mb-3" id="productDesc">
+
+            <button id="btn" class="btn btn-info" >add product</button>
+          
+          
+       
+        <input type="text" class="form-control my-5" id="search" onkeyup="searchFun(this)">
+        <table class="table mt-5 table-striped" >
+            <thead>
+                <th>Index</th>
+                <th>productName</th>
+                <th>productPrice</th>
+                <th>productCat</th>
+                <th>productDesc</th>
+                <th>Delete</th>
+                <th>Update</th>
+            </thead>
+            <tbody id="tableRow">
+              
+            </tbody>
+        </table>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
