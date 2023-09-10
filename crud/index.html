@@ -1,0 +1,48 @@
+<html>
+
+<head>
+
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/index_style.css">
+
+</head>
+
+<body>
+<div class="container">
+<div class="form-group">
+   <h6>productName :</h6> 
+  <input type="text" id="productName" class="form-control"> 
+  <small class="text-muted">product name must be 2-8</small> 
+</div>
+<div class="form-group">
+        <h6>productPrice :</h6> 
+       <input type="text" id="productPrice" class="form-control"> 
+       <small class="text-muted">product name must be 2-8</small> 
+     </div>
+     <div class="form-group">
+            <h6>productCategory:</h6> 
+           <select name="pcategory" id="productCategory">
+               
+           </select> 
+         </div> 
+         <div class="form-group">
+             <label>sale</label>
+               <input type="radio" name="sale" value="true">
+               <br>
+               <label>no sale</label>
+               <input type="radio" name="sale" value="false">
+             </div> 
+         <button class="btn btn-outline-info float-right" onclick="addProduct()" id="add">Add Product</button>
+        <div class="clearfix"></div>
+
+<input type="text" class="w-75   mt-5 ml-auto mr-auto  form-control" onkeyup="searchProducts(this.value)">
+    <div class="row" id="productRow">
+
+    </div>
+    </div>
+    <script src="js/first.js"></script>
+</body>
+
+</html>
